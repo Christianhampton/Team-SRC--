@@ -1,0 +1,3 @@
+Firstly, Valve Corperation, the whole thing wouldn't be possible without them and they're Source SDK! Most of the
+source code was written by them and to use it, you must have the Source SDK (get it on Steam)
+
