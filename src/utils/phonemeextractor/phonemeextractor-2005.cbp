@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="phonemeextractor" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="./Debug/phonemeextractor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-D_USRDLL" />
+					<Add option="-DPHONEMEEXTRACTOR_EXPORTS" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add directory="../common" />
+					<Add directory="../hlfaceposer" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+					<Add directory="../sapi51/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../common" />
+					<Add directory="../hlfaceposer" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+					<Add directory="../sapi51/include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="./Release/phonemeextractor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-D_USRDLL" />
+					<Add option="-DPHONEMEEXTRACTOR_EXPORTS" />
+					<Add option="-Wall" />
+					<Add option="-O2" />
+					<Add directory="../common" />
+					<Add directory="../hlfaceposer" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+					<Add directory="../sapi51/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../common" />
+					<Add directory="../hlfaceposer" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+					<Add directory="../sapi51/include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../lib/public/mathlib.lib" />
+		<Unit filename="../../lib/public/tier0.lib" />
+		<Unit filename="../../lib/public/tier1.lib" />
+		<Unit filename="../../lib/public/vstdlib.lib" />
+		<Unit filename="../../public/FileSystem.h" />
+		<Unit filename="../../public/amd3dx.h" />
+		<Unit filename="../../public/appframework/IAppSystem.h" />
+		<Unit filename="../../public/commonmacros.h" />
+		<Unit filename="../../public/filesystem_helpers.cpp" />
+		<Unit filename="../../public/filesystem_helpers.h" />
+		<Unit filename="../../public/filesystem_init.cpp" />
+		<Unit filename="../../public/mathlib.h" />
+		<Unit filename="../../public/phonemeextractor/phonemeextractor.h" />
+		<Unit filename="../../public/protected_things.h" />
+		<Unit filename="../../public/sentence.cpp" />
+		<Unit filename="../../public/sentence.h" />
+		<Unit filename="../../public/string_t.h" />
+		<Unit filename="../../public/tier0/basetypes.h" />
+		<Unit filename="../../public/tier0/dbg.h" />
+		<Unit filename="../../public/tier0/fasttimer.h" />
+		<Unit filename="../../public/tier0/memoverride.cpp" />
+		<Unit filename="../../public/tier0/platform.h" />
+		<Unit filename="../../public/tier1/utllinkedlist.h" />
+		<Unit filename="../../public/tier1/utlmemory.h" />
+		<Unit filename="../../public/tier1/utlvector.h" />
+		<Unit filename="../../public/vector.h" />
+		<Unit filename="../../public/vector2d.h" />
+		<Unit filename="../../public/vstdlib/strtools.h" />
+		<Unit filename="../../public/vstdlib/vstdlib.h" />
+		<Unit filename="../common/cmdlib.cpp" />
+		<Unit filename="../common/cmdlib.h" />
+		<Unit filename="../common/filesystem_tools.cpp" />
+		<Unit filename="../common/filesystem_tools.h" />
+		<Unit filename="../sapi51/Include/Spddkhlp.h" />
+		<Unit filename="../sapi51/Include/sapi.h" />
+		<Unit filename="../sapi51/Include/sapiddk.h" />
+		<Unit filename="../sapi51/Include/spdebug.h" />
+		<Unit filename="../sapi51/Include/sperror.h" />
+		<Unit filename="../sapi51/Include/sphelper.h" />
+		<Unit filename="../sapi51/lib/i386/sapi.lib" />
+		<Unit filename="extractor_utils.cpp" />
+		<Unit filename="phonemeconverter.cpp" />
+		<Unit filename="phonemeconverter.h" />
+		<Unit filename="phonemeextractor.cpp" />
+		<Unit filename="talkback.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

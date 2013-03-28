@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="vrad" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="./vrad___Win32_Debug/vrad" prefix_auto="1" extension_auto="1" />
+				<Option object_output="vrad___Win32_Debug" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-D_DEBUG" />
+					<Add option="-D_WIN32" />
+					<Add option="-D_USRDLL" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DMPI" />
+					<Add option="-DPROTECTED_THINGS_DISABLE" />
+					<Add option="-DVRAD" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add directory="../common" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+					<Add directory="../vmpi" />
+					<Add directory="../vmpi/mysql/mysqlpp/include" />
+					<Add directory="../vmpi/mysql/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../common" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+					<Add directory="../vmpi" />
+					<Add directory="../vmpi/mysql/mysqlpp/include" />
+					<Add directory="../vmpi/mysql/include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="ws2_32" />
+					<Add directory="../../lib/common" />
+					<Add directory="../../lib/public" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="./vrad___Win32_Release/vrad" prefix_auto="1" extension_auto="1" />
+				<Option object_output="vrad___Win32_Release" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DNDEBUG" />
+					<Add option="-D_WIN32" />
+					<Add option="-D_USRDLL" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DMPI" />
+					<Add option="-DPROTECTED_THINGS_DISABLE" />
+					<Add option="-DVRAD" />
+					<Add option="-D_SECURE_SCL=0" />
+					<Add option="-Wall" />
+					<Add option="-O2" />
+					<Add directory="../common" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+					<Add directory="../vmpi" />
+					<Add directory="../vmpi/mysql/mysqlpp/include" />
+					<Add directory="../vmpi/mysql/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../common" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+					<Add directory="../vmpi" />
+					<Add directory="../vmpi/mysql/mysqlpp/include" />
+					<Add directory="../vmpi/mysql/include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="ws2_32" />
+					<Add directory="../../lib/common" />
+					<Add directory="../../lib/public" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../lib/public/bitmap.lib" />
+		<Unit filename="../../lib/public/mathlib.lib" />
+		<Unit filename="../../lib/public/quantize.lib" />
+		<Unit filename="../../lib/public/raytrace.lib" />
+		<Unit filename="../../lib/public/tier0.lib" />
+		<Unit filename="../../lib/public/tier1.lib" />
+		<Unit filename="../../lib/public/tier2.lib" />
+		<Unit filename="../../lib/public/vmpi.lib" />
+		<Unit filename="../../lib/public/vstdlib.lib" />
+		<Unit filename="../../lib/public/vtf.lib" />
+		<Unit filename="../../public/BSPTreeData.cpp" />
+		<Unit filename="../../public/BSPTreeData.h" />
+		<Unit filename="../../public/ChunkFile.cpp" />
+		<Unit filename="../../public/ChunkFile.h" />
+		<Unit filename="../../public/CollisionUtils.cpp" />
+		<Unit filename="../../public/CollisionUtils.h" />
+		<Unit filename="../../public/DispColl_Common.cpp" />
+		<Unit filename="../../public/DispColl_Common.h" />
+		<Unit filename="../../public/FileSystem.h" />
+		<Unit filename="../../public/GameBSPFile.h" />
+		<Unit filename="../../public/ScratchPad3D.cpp" />
+		<Unit filename="../../public/ScratchPad3D.h" />
+		<Unit filename="../../public/ScratchPadUtils.cpp" />
+		<Unit filename="../../public/ScratchPadUtils.h" />
+		<Unit filename="../../public/amd3dx.h" />
+		<Unit filename="../../public/anorms.cpp" />
+		<Unit filename="../../public/anorms.h" />
+		<Unit filename="../../public/appframework/IAppSystem.h" />
+		<Unit filename="../../public/basehandle.h" />
+		<Unit filename="../../public/bitvec.h" />
+		<Unit filename="../../public/bspfile.h" />
+		<Unit filename="../../public/bspflags.h" />
+		<Unit filename="../../public/builddisp.cpp" />
+		<Unit filename="../../public/builddisp.h" />
+		<Unit filename="../../public/bumpvects.cpp" />
+		<Unit filename="../../public/bumpvects.h" />
+		<Unit filename="../../public/cmodel.h" />
+		<Unit filename="../../public/commonmacros.h" />
+		<Unit filename="../../public/compressed_vector.h" />
+		<Unit filename="../../public/const.h" />
+		<Unit filename="../../public/coordsize.h" />
+		<Unit filename="../../public/disp_common.cpp" />
+		<Unit filename="../../public/disp_common.h" />
+		<Unit filename="../../public/disp_powerinfo.cpp" />
+		<Unit filename="../../public/disp_powerinfo.h" />
+		<Unit filename="../../public/disp_vertindex.h" />
+		<Unit filename="../../public/filesystem_helpers.cpp" />
+		<Unit filename="../../public/filesystem_helpers.h" />
+		<Unit filename="../../public/gametrace.h" />
+		<Unit filename="../../public/halton.h" />
+		<Unit filename="../../public/ihandleentity.h" />
+		<Unit filename="../../public/iscratchpad3d.h" />
+		<Unit filename="../../public/ivraddll.h" />
+		<Unit filename="../../public/loadcmdline.cpp" />
+		<Unit filename="../../public/lumpfiles.cpp" />
+		<Unit filename="../../public/map_utils.h" />
+		<Unit filename="../../public/materialsystem/hardwareverts.h" />
+		<Unit filename="../../public/materialsystem/imaterial.h" />
+		<Unit filename="../../public/materialsystem/imaterialsystem.h" />
+		<Unit filename="../../public/materialsystem/imaterialvar.h" />
+		<Unit filename="../../public/materialsystem/materialsystem_config.h" />
+		<Unit filename="../../public/mathlib.h" />
+		<Unit filename="../../public/optimize.h" />
+		<Unit filename="../../public/phyfile.h" />
+		<Unit filename="../../public/protected_things.h" />
+		<Unit filename="../../public/s3_intrf.h" />
+		<Unit filename="../../public/string_t.h" />
+		<Unit filename="../../public/studio.h" />
+		<Unit filename="../../public/terrainmod.h" />
+		<Unit filename="../../public/tgawriter.h" />
+		<Unit filename="../../public/tier0/basetypes.h" />
+		<Unit filename="../../public/tier0/dbg.h" />
+		<Unit filename="../../public/tier0/fasttimer.h" />
+		<Unit filename="../../public/tier0/memdbgon.h" />
+		<Unit filename="../../public/tier0/platform.h" />
+		<Unit filename="../../public/tier0/vprof.h" />
+		<Unit filename="../../public/tier1/bitbuf.h" />
+		<Unit filename="../../public/tier1/characterset.h" />
+		<Unit filename="../../public/tier1/checksum_crc.h" />
+		<Unit filename="../../public/tier1/checksum_md5.h" />
+		<Unit filename="../../public/tier1/interface.h" />
+		<Unit filename="../../public/tier1/tokenreader.h" />
+		<Unit filename="../../public/tier1/utlbuffer.h" />
+		<Unit filename="../../public/tier1/utldict.h" />
+		<Unit filename="../../public/tier1/utlhash.h" />
+		<Unit filename="../../public/tier1/utllinkedlist.h" />
+		<Unit filename="../../public/tier1/utlmemory.h" />
+		<Unit filename="../../public/tier1/utlrbtree.h" />
+		<Unit filename="../../public/tier1/utlsymbol.h" />
+		<Unit filename="../../public/tier1/utlvector.h" />
+		<Unit filename="../../public/trace.h" />
+		<Unit filename="../../public/vcollide.h" />
+		<Unit filename="../../public/vector.h" />
+		<Unit filename="../../public/vector2d.h" />
+		<Unit filename="../../public/vector4d.h" />
+		<Unit filename="../../public/vmatrix.cpp" />
+		<Unit filename="../../public/vmatrix.h" />
+		<Unit filename="../../public/vphysics_interface.h" />
+		<Unit filename="../../public/vplane.h" />
+		<Unit filename="../../public/vstdlib/ICommandLine.h" />
+		<Unit filename="../../public/vstdlib/random.h" />
+		<Unit filename="../../public/vstdlib/strtools.h" />
+		<Unit filename="../../public/vstdlib/vstdlib.h" />
+		<Unit filename="../../public/vtf/vtf.h" />
+		<Unit filename="../../public/wadtypes.h" />
+		<Unit filename="../../public/worldsize.h" />
+		<Unit filename="../../public/zip_utils.cpp" />
+		<Unit filename="../common/ISQLDBReplyTarget.h" />
+		<Unit filename="../common/MySqlDatabase.cpp" />
+		<Unit filename="../common/MySqlDatabase.h" />
+		<Unit filename="../common/bsplib.cpp" />
+		<Unit filename="../common/bsplib.h" />
+		<Unit filename="../common/cmdlib.cpp" />
+		<Unit filename="../common/cmdlib.h" />
+		<Unit filename="../common/consolewnd.h" />
+		<Unit filename="../common/map_shared.cpp" />
+		<Unit filename="../common/map_shared.h" />
+		<Unit filename="../common/mpi_stats.cpp" />
+		<Unit filename="../common/mpi_stats.h" />
+		<Unit filename="../common/pacifier.cpp" />
+		<Unit filename="../common/pacifier.h" />
+		<Unit filename="../common/physdll.cpp" />
+		<Unit filename="../common/physdll.h" />
+		<Unit filename="../common/polylib.cpp" />
+		<Unit filename="../common/polylib.h" />
+		<Unit filename="../common/scriplib.cpp" />
+		<Unit filename="../common/scriplib.h" />
+		<Unit filename="../common/threads.cpp" />
+		<Unit filename="../common/threads.h" />
+		<Unit filename="../common/tools_minidump.cpp" />
+		<Unit filename="../common/tools_minidump.h" />
+		<Unit filename="../common/utilmatlib.cpp" />
+		<Unit filename="../common/utilmatlib.h" />
+		<Unit filename="../common/vmpi_tools_shared.cpp" />
+		<Unit filename="../common/vmpi_tools_shared.h" />
+		<Unit filename="../vmpi/ichannel.h" />
+		<Unit filename="../vmpi/imysqlwrapper.h" />
+		<Unit filename="../vmpi/iphelpers.h" />
+		<Unit filename="../vmpi/messbuf.h" />
+		<Unit filename="../vmpi/mysql_wrapper.h" />
+		<Unit filename="../vmpi/threadhelpers.h" />
+		<Unit filename="../vmpi/vmpi.h" />
+		<Unit filename="../vmpi/vmpi_defs.h" />
+		<Unit filename="../vmpi/vmpi_dispatch.h" />
+		<Unit filename="../vmpi/vmpi_distribute_work.h" />
+		<Unit filename="../vmpi/vmpi_filesystem.h" />
+		<Unit filename="SampleHash.cpp" />
+		<Unit filename="VRAD_DispColl.cpp" />
+		<Unit filename="VRAD_DispColl.h" />
+		<Unit filename="VRadDisps.cpp" />
+		<Unit filename="VRadStaticProps.cpp" />
+		<Unit filename="VradDetailProps.cpp" />
+		<Unit filename="disp_vrad.cpp" />
+		<Unit filename="disp_vrad.h" />
+		<Unit filename="iincremental.h" />
+		<Unit filename="imagepacker.cpp" />
+		<Unit filename="imagepacker.h" />
+		<Unit filename="incremental.cpp" />
+		<Unit filename="incremental.h" />
+		<Unit filename="leaf_ambient_lighting.cpp" />
+		<Unit filename="leaf_ambient_lighting.h" />
+		<Unit filename="lightmap.cpp" />
+		<Unit filename="lightmap.h" />
+		<Unit filename="macro_texture.cpp" />
+		<Unit filename="macro_texture.h" />
+		<Unit filename="mpivrad.cpp" />
+		<Unit filename="mpivrad.h" />
+		<Unit filename="notes.txt" />
+		<Unit filename="radial.cpp" />
+		<Unit filename="radial.h" />
+		<Unit filename="trace.cpp" />
+		<Unit filename="vismat.cpp" />
+		<Unit filename="vismat.h" />
+		<Unit filename="vrad.cpp" />
+		<Unit filename="vrad.h" />
+		<Unit filename="vraddetailprops.h" />
+		<Unit filename="vraddll.cpp" />
+		<Unit filename="vraddll.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

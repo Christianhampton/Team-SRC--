@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="vvis" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="./Debug/vvis" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-D_DEBUG" />
+					<Add option="-D_WIN32" />
+					<Add option="-D_USRDLL" />
+					<Add option="-DWIN32" />
+					<Add option="-DWINDOWS" />
+					<Add option="-DMPI" />
+					<Add option="-DPROTECTED_THINGS_DISABLE" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add directory="../common" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+					<Add directory="../vmpi" />
+					<Add directory="../vmpi/mysql/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../common" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+					<Add directory="../vmpi" />
+					<Add directory="../vmpi/mysql/include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+					<Add library="ws2_32" />
+					<Add directory="../../lib/public" />
+					<Add directory="../../lib/common" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="./Release/vvis" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DNDEBUG" />
+					<Add option="-D_WIN32" />
+					<Add option="-D_USRDLL" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DMPI" />
+					<Add option="-DPROTECTED_THINGS_DISABLE" />
+					<Add option="-Wall" />
+					<Add option="-O2" />
+					<Add directory="../common" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+					<Add directory="../vmpi" />
+					<Add directory="../vmpi/mysql/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../common" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+					<Add directory="../vmpi" />
+					<Add directory="../vmpi/mysql/include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="ws2_32" />
+					<Add directory="../../lib/public" />
+					<Add directory="../../lib/common" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../lib/public/mathlib.lib" />
+		<Unit filename="../../lib/public/tier0.lib" />
+		<Unit filename="../../lib/public/tier1.lib" />
+		<Unit filename="../../lib/public/tier2.lib" />
+		<Unit filename="../../lib/public/vmpi.lib" />
+		<Unit filename="../../lib/public/vstdlib.lib" />
+		<Unit filename="../../public/BSPTreeData.h" />
+		<Unit filename="../../public/GameBSPFile.h" />
+		<Unit filename="../../public/amd3dx.h" />
+		<Unit filename="../../public/bspfile.h" />
+		<Unit filename="../../public/bspflags.h" />
+		<Unit filename="../../public/bumpvects.h" />
+		<Unit filename="../../public/cmodel.h" />
+		<Unit filename="../../public/collisionutils.cpp" />
+		<Unit filename="../../public/commonmacros.h" />
+		<Unit filename="../../public/filesystem_helpers.cpp" />
+		<Unit filename="../../public/loadcmdline.cpp" />
+		<Unit filename="../../public/lumpfiles.cpp" />
+		<Unit filename="../../public/mathlib.h" />
+		<Unit filename="../../public/scratchpad3d.cpp" />
+		<Unit filename="../../public/tier0/basetypes.h" />
+		<Unit filename="../../public/tier1/checksum_crc.h" />
+		<Unit filename="../../public/tier1/checksum_md5.h" />
+		<Unit filename="../../public/tier1/utlbuffer.h" />
+		<Unit filename="../../public/tier1/utllinkedlist.h" />
+		<Unit filename="../../public/tier1/utlmemory.h" />
+		<Unit filename="../../public/tier1/utlrbtree.h" />
+		<Unit filename="../../public/tier1/utlsymbol.h" />
+		<Unit filename="../../public/tier1/utlvector.h" />
+		<Unit filename="../../public/vcollide.h" />
+		<Unit filename="../../public/vector.h" />
+		<Unit filename="../../public/vector2d.h" />
+		<Unit filename="../../public/vstdlib/strtools.h" />
+		<Unit filename="../../public/vstdlib/vstdlib.h" />
+		<Unit filename="../../public/wadtypes.h" />
+		<Unit filename="../../public/zip_utils.cpp" />
+		<Unit filename="../common/ISQLDBReplyTarget.h" />
+		<Unit filename="../common/MySqlDatabase.cpp" />
+		<Unit filename="../common/MySqlDatabase.h" />
+		<Unit filename="../common/bsplib.cpp" />
+		<Unit filename="../common/bsplib.h" />
+		<Unit filename="../common/cmdlib.cpp" />
+		<Unit filename="../common/cmdlib.h" />
+		<Unit filename="../common/ivvisdll.h" />
+		<Unit filename="../common/mpi_stats.cpp" />
+		<Unit filename="../common/pacifier.cpp" />
+		<Unit filename="../common/pacifier.h" />
+		<Unit filename="../common/scratchpad_helpers.cpp" />
+		<Unit filename="../common/scriplib.cpp" />
+		<Unit filename="../common/scriplib.h" />
+		<Unit filename="../common/threads.cpp" />
+		<Unit filename="../common/threads.h" />
+		<Unit filename="../common/tools_minidump.cpp" />
+		<Unit filename="../common/tools_minidump.h" />
+		<Unit filename="../common/vmpi_tools_shared.cpp" />
+		<Unit filename="../common/vmpi_tools_shared.h" />
+		<Unit filename="../vmpi/vmpi_distribute_work.h" />
+		<Unit filename="WaterDist.cpp" />
+		<Unit filename="flow.cpp" />
+		<Unit filename="mpivis.cpp" />
+		<Unit filename="mpivis.h" />
+		<Unit filename="vis.h" />
+		<Unit filename="vvis.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

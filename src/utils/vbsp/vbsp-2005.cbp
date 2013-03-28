@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="vbsp" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="vbsp-2005" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DMACRO_MATHLIB" />
+					<Add option="-D_WIN32" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-DPROTECTED_THINGS_DISABLE" />
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add directory="../../Public" />
+					<Add directory="../../Public/tier1" />
+					<Add directory="../common" />
+					<Add directory="../vmpi" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../Public" />
+					<Add directory="../../Public/tier1" />
+					<Add directory="../common" />
+					<Add directory="../vmpi" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="ws2_32" />
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+					<Add library="winmm" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="./Release/vbsp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DNDEBUG" />
+					<Add option="-DMACRO_MATHLIB" />
+					<Add option="-D_WIN32" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-DPROTECTED_THINGS_DISABLE" />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add directory="../../Public" />
+					<Add directory="../../Public/tier1" />
+					<Add directory="../common" />
+					<Add directory="../vmpi" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../Public" />
+					<Add directory="../../Public/tier1" />
+					<Add directory="../common" />
+					<Add directory="../vmpi" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="ws2_32" />
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+					<Add library="winmm" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../lib/public/bitmap.lib" />
+		<Unit filename="../../lib/public/mathlib.lib" />
+		<Unit filename="../../lib/public/tier0.lib" />
+		<Unit filename="../../lib/public/tier1.lib" />
+		<Unit filename="../../lib/public/tier2.lib" />
+		<Unit filename="../../lib/public/vstdlib.lib" />
+		<Unit filename="../../lib/public/vtf.lib" />
+		<Unit filename="../../public/BSPTreeData.h" />
+		<Unit filename="../../public/ChunkFile.cpp" />
+		<Unit filename="../../public/ChunkFile.h" />
+		<Unit filename="../../public/CollisionUtils.cpp" />
+		<Unit filename="../../public/CollisionUtils.h" />
+		<Unit filename="../../public/FileSystem.h" />
+		<Unit filename="../../public/GameBSPFile.h" />
+		<Unit filename="../../public/IScratchPad3D.h" />
+		<Unit filename="../../public/ImageLoader.h" />
+		<Unit filename="../../public/ScratchPad3D.cpp" />
+		<Unit filename="../../public/ScratchPad3D.h" />
+		<Unit filename="../../public/amd3dx.h" />
+		<Unit filename="../../public/arraystack.h" />
+		<Unit filename="../../public/bspfile.h" />
+		<Unit filename="../../public/bspflags.h" />
+		<Unit filename="../../public/builddisp.cpp" />
+		<Unit filename="../../public/builddisp.h" />
+		<Unit filename="../../public/bumpvects.h" />
+		<Unit filename="../../public/cmodel.h" />
+		<Unit filename="../../public/commonmacros.h" />
+		<Unit filename="../../public/dbg/dbg.h" />
+		<Unit filename="../../public/disp_common.cpp" />
+		<Unit filename="../../public/disp_common.h" />
+		<Unit filename="../../public/disp_powerinfo.cpp" />
+		<Unit filename="../../public/disp_powerinfo.h" />
+		<Unit filename="../../public/disp_vertindex.h" />
+		<Unit filename="../../public/filesystem_helpers.cpp" />
+		<Unit filename="../../public/filesystem_helpers.h" />
+		<Unit filename="../../public/filesystem_init.cpp" />
+		<Unit filename="../../public/loadcmdline.cpp" />
+		<Unit filename="../../public/lumpfiles.cpp" />
+		<Unit filename="../../public/mathlib.h" />
+		<Unit filename="../../public/nmatrix.h" />
+		<Unit filename="../../public/ntree.h" />
+		<Unit filename="../../public/nvector.h" />
+		<Unit filename="../../public/phyfile.h" />
+		<Unit filename="../../public/studio.h" />
+		<Unit filename="../../public/tier0/basetypes.h" />
+		<Unit filename="../../public/tier0/memoverride.cpp" />
+		<Unit filename="../../public/tier1/interface.h" />
+		<Unit filename="../../public/tier1/tokenreader.h" />
+		<Unit filename="../../public/tier1/utlbuffer.h" />
+		<Unit filename="../../public/tier1/utllinkedlist.h" />
+		<Unit filename="../../public/tier1/utlmemory.h" />
+		<Unit filename="../../public/tier1/utlrbtree.h" />
+		<Unit filename="../../public/tier1/utlsymbol.h" />
+		<Unit filename="../../public/tier1/utlvector.h" />
+		<Unit filename="../../public/vcollide.h" />
+		<Unit filename="../../public/vector.h" />
+		<Unit filename="../../public/vector2d.h" />
+		<Unit filename="../../public/vector4d.h" />
+		<Unit filename="../../public/vmatrix.cpp" />
+		<Unit filename="../../public/vmatrix.h" />
+		<Unit filename="../../public/vphysics_interface.h" />
+		<Unit filename="../../public/vplane.h" />
+		<Unit filename="../../public/wadtypes.h" />
+		<Unit filename="../../public/worldsize.h" />
+		<Unit filename="../../public/zip_utils.cpp" />
+		<Unit filename="../common/FileSystem_Tools.h" />
+		<Unit filename="../common/bsplib.cpp" />
+		<Unit filename="../common/bsplib.h" />
+		<Unit filename="../common/cmdlib.cpp" />
+		<Unit filename="../common/cmdlib.h" />
+		<Unit filename="../common/filesystem_tools.cpp" />
+		<Unit filename="../common/map_shared.cpp" />
+		<Unit filename="../common/map_shared.h" />
+		<Unit filename="../common/mstristrip.cpp" />
+		<Unit filename="../common/mstristrip.h" />
+		<Unit filename="../common/pacifier.cpp" />
+		<Unit filename="../common/pacifier.h" />
+		<Unit filename="../common/physdll.cpp" />
+		<Unit filename="../common/physdll.h" />
+		<Unit filename="../common/polylib.cpp" />
+		<Unit filename="../common/polylib.h" />
+		<Unit filename="../common/qfiles.h" />
+		<Unit filename="../common/scratchpad_helpers.cpp" />
+		<Unit filename="../common/scratchpad_helpers.h" />
+		<Unit filename="../common/scriplib.cpp" />
+		<Unit filename="../common/scriplib.h" />
+		<Unit filename="../common/threads.cpp" />
+		<Unit filename="../common/threads.h" />
+		<Unit filename="../common/tools_minidump.cpp" />
+		<Unit filename="../common/tools_minidump.h" />
+		<Unit filename="../common/utilmatlib.cpp" />
+		<Unit filename="../common/utilmatlib.h" />
+		<Unit filename="../common/zip_uncompressed.h" />
+		<Unit filename="../vmpi/vmpi.h" />
+		<Unit filename="StaticProp.cpp" />
+		<Unit filename="brushbsp.cpp" />
+		<Unit filename="csg.cpp" />
+		<Unit filename="csg.h" />
+		<Unit filename="cubemap.cpp" />
+		<Unit filename="detail.cpp" />
+		<Unit filename="detail.h" />
+		<Unit filename="detailObjects.cpp" />
+		<Unit filename="disp_ivp.cpp" />
+		<Unit filename="disp_ivp.h" />
+		<Unit filename="disp_lightmap_alpha.h" />
+		<Unit filename="disp_vbsp.cpp" />
+		<Unit filename="disp_vbsp.h" />
+		<Unit filename="faces.cpp" />
+		<Unit filename="faces.h" />
+		<Unit filename="glfile.cpp" />
+		<Unit filename="ivp.cpp" />
+		<Unit filename="ivp.h" />
+		<Unit filename="leakfile.cpp" />
+		<Unit filename="map.cpp" />
+		<Unit filename="map.h" />
+		<Unit filename="materialpatch.cpp" />
+		<Unit filename="materialpatch.h" />
+		<Unit filename="materialsub.cpp" />
+		<Unit filename="materialsub.h" />
+		<Unit filename="nodraw.cpp" />
+		<Unit filename="normals.cpp" />
+		<Unit filename="notes.txt" />
+		<Unit filename="overlay.cpp" />
+		<Unit filename="portals.cpp" />
+		<Unit filename="prtfile.cpp" />
+		<Unit filename="textures.cpp" />
+		<Unit filename="tree.cpp" />
+		<Unit filename="vbsp.cpp" />
+		<Unit filename="vbsp.h" />
+		<Unit filename="writebsp.cpp" />
+		<Unit filename="writebsp.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

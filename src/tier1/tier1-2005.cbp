@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="tier1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="../lib/public/tier1" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Debug" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-D_WIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_LIB" />
+					<Add option="-DTIER1_STATIC_LIB" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add directory="../common" />
+					<Add directory="../public" />
+					<Add directory="../public/tier1" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../common" />
+					<Add directory="../public" />
+					<Add directory="../public/tier1" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="../lib/public/tier1" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Release" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-D_WIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_LIB" />
+					<Add option="-DTIER1_STATIC_LIB" />
+					<Add option="-D_SECURE_SCL=0" />
+					<Add option="-Wall" />
+					<Add option="-O2" />
+					<Add directory="../common" />
+					<Add directory="../public" />
+					<Add directory="../public/tier1" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../common" />
+					<Add directory="../public" />
+					<Add directory="../public/tier1" />
+				</ResourceCompiler>
+			</Target>
+		</Build>
+		<Unit filename="../common/xbox/xboxstubs.h" />
+		<Unit filename="../public/datamap.h" />
+		<Unit filename="../public/tier1/KeyValues.h" />
+		<Unit filename="../public/tier1/UtlSortVector.h" />
+		<Unit filename="../public/tier1/UtlStringMap.h" />
+		<Unit filename="../public/tier1/bitbuf.h" />
+		<Unit filename="../public/tier1/characterset.h" />
+		<Unit filename="../public/tier1/checksum_crc.h" />
+		<Unit filename="../public/tier1/checksum_md5.h" />
+		<Unit filename="../public/tier1/convar.h" />
+		<Unit filename="../public/tier1/datamanager.h" />
+		<Unit filename="../public/tier1/diff.h" />
+		<Unit filename="../public/tier1/fmtstr.h" />
+		<Unit filename="../public/tier1/generichash.h" />
+		<Unit filename="../public/tier1/interface.h" />
+		<Unit filename="../public/tier1/jobthread.h" />
+		<Unit filename="../public/tier1/mempool.h" />
+		<Unit filename="../public/tier1/memstack.h" />
+		<Unit filename="../public/tier1/netadr.h" />
+		<Unit filename="../public/tier1/processor_detect.h" />
+		<Unit filename="../public/tier1/rangecheckedvar.h" />
+		<Unit filename="../public/tier1/refcount.h" />
+		<Unit filename="../public/tier1/smartptr.h" />
+		<Unit filename="../public/tier1/stringpool.h" />
+		<Unit filename="../public/tier1/strtools.h" />
+		<Unit filename="../public/tier1/tier1.h" />
+		<Unit filename="../public/tier1/tokenreader.h" />
+		<Unit filename="../public/tier1/utlbidirectionalset.h" />
+		<Unit filename="../public/tier1/utlbuffer.h" />
+		<Unit filename="../public/tier1/utldict.h" />
+		<Unit filename="../public/tier1/utlfixedlinkedlist.h" />
+		<Unit filename="../public/tier1/utlfixedmemory.h" />
+		<Unit filename="../public/tier1/utlhandletable.h" />
+		<Unit filename="../public/tier1/utlhash.h" />
+		<Unit filename="../public/tier1/utllinkedlist.h" />
+		<Unit filename="../public/tier1/utlmap.h" />
+		<Unit filename="../public/tier1/utlmemory.h" />
+		<Unit filename="../public/tier1/utlmultilist.h" />
+		<Unit filename="../public/tier1/utlpriorityqueue.h" />
+		<Unit filename="../public/tier1/utlqueue.h" />
+		<Unit filename="../public/tier1/utlrbtree.h" />
+		<Unit filename="../public/tier1/utlstack.h" />
+		<Unit filename="../public/tier1/utlstring.h" />
+		<Unit filename="../public/tier1/utlsymbol.h" />
+		<Unit filename="../public/tier1/utlvector.h" />
+		<Unit filename="KeyValues.cpp" />
+		<Unit filename="NetAdr.cpp" />
+		<Unit filename="bitbuf.cpp" />
+		<Unit filename="byteswap.cpp" />
+		<Unit filename="characterset.cpp" />
+		<Unit filename="checksum_crc.cpp" />
+		<Unit filename="checksum_md5.cpp" />
+		<Unit filename="convar.cpp" />
+		<Unit filename="datamanager.cpp" />
+		<Unit filename="diff.cpp" />
+		<Unit filename="generichash.cpp" />
+		<Unit filename="interface.cpp" />
+		<Unit filename="jobthread.cpp" />
+		<Unit filename="mempool.cpp" />
+		<Unit filename="memstack.cpp" />
+		<Unit filename="processor_detect.cpp" />
+		<Unit filename="processor_detect_linux.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="rangecheckedvar.cpp" />
+		<Unit filename="stringpool.cpp" />
+		<Unit filename="strtools.cpp" />
+		<Unit filename="tier1.cpp" />
+		<Unit filename="tokenreader.cpp" />
+		<Unit filename="utlbuffer.cpp" />
+		<Unit filename="utlstring.cpp" />
+		<Unit filename="utlsymbol.cpp" />
+		<Unit filename="xboxstubs.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

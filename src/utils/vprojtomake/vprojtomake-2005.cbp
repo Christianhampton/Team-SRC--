@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="vprojtomake" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release Win32">
+				<Option output="./Release/vcpm" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add directory="../common" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../common" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+					<Add library="comsupp" />
+					<Add library="msxml2" />
+					<Add directory="../../lib/public" />
+				</Linker>
+			</Target>
+			<Target title="Debug Win32">
+				<Option output="./Debug/vprojtomake" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-DDEBUG" />
+					<Add option="-Wall" />
+					<Add option="-O0" />
+					<Add directory="../common" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../common" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+					<Add library="comsupp" />
+					<Add library="msxml2" />
+					<Add directory="../../lib/public" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../lib/public/tier0.lib" />
+		<Unit filename="../../lib/public/tier1.lib" />
+		<Unit filename="../../lib/public/tier2.lib" />
+		<Unit filename="../../lib/public/vstdlib.lib" />
+		<Unit filename="../../public/FileSystem.h" />
+		<Unit filename="../../public/appframework/IAppSystem.h" />
+		<Unit filename="../../public/tier0/basetypes.h" />
+		<Unit filename="../../public/tier1/KeyValues.h" />
+		<Unit filename="../../public/tier1/UtlMemory.h" />
+		<Unit filename="../../public/tier1/characterset.h" />
+		<Unit filename="../../public/tier1/utlbuffer.h" />
+		<Unit filename="../../public/tier1/utldict.h" />
+		<Unit filename="../../public/tier1/utlmap.h" />
+		<Unit filename="../../public/tier1/utlsymbol.h" />
+		<Unit filename="../../public/tier1/utlvector.h" />
+		<Unit filename="../../public/vstdlib/vstdlib.h" />
+		<Unit filename="../../tier1/KeyValues.cpp" />
+		<Unit filename="../../tier1/interface.cpp" />
+		<Unit filename="../../tier1/utlbuffer.cpp" />
+		<Unit filename="../../tier1/utlsymbol.cpp" />
+		<Unit filename="../common/cmdlib.h" />
+		<Unit filename="MsXml2.h" />
+		<Unit filename="makefilecreator.cpp" />
+		<Unit filename="makefilecreator.h" />
+		<Unit filename="stdafx.cpp" />
+		<Unit filename="stdafx.h" />
+		<Unit filename="vcprojconvert.cpp" />
+		<Unit filename="vcprojconvert.h" />
+		<Unit filename="vprojtomake.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

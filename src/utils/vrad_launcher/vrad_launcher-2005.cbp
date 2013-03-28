@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="vrad_launcher" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release Win32">
+				<Option output="Release/vrad" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="Debug Win32">
+				<Option output="Debug/vrad" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+				</ResourceCompiler>
+			</Target>
+		</Build>
+		<Unit filename="../../lib/public/tier0.lib" />
+		<Unit filename="../../lib/public/tier1.lib" />
+		<Unit filename="../../lib/public/vstdlib.lib" />
+		<Unit filename="../../public/ivraddll.h" />
+		<Unit filename="../../public/tier1/interface.h" />
+		<Unit filename="stdafx.cpp" />
+		<Unit filename="stdafx.h" />
+		<Unit filename="vrad_launcher.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

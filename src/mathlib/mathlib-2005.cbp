@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="mathlib" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="../lib/public/mathlib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Debug" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-D_WIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_LIB" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add directory="../common" />
+					<Add directory="../public" />
+					<Add directory="../public/mathlib" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../common" />
+					<Add directory="../public" />
+					<Add directory="../public/mathlib" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="../lib/public/mathlib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Release" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-D_WIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_LIB" />
+					<Add option="-Wall" />
+					<Add option="-O2" />
+					<Add directory="../common" />
+					<Add directory="../public" />
+					<Add directory="../public/mathlib" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../common" />
+					<Add directory="../public" />
+					<Add directory="../public/mathlib" />
+				</ResourceCompiler>
+			</Target>
+		</Build>
+		<Unit filename="../public/mathlib/math_base.h" />
+		<Unit filename="halton.cpp" />
+		<Unit filename="lightdesc.cpp" />
+		<Unit filename="mathlib_base.cpp" />
+		<Unit filename="powsse.cpp" />
+		<Unit filename="sseconst.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

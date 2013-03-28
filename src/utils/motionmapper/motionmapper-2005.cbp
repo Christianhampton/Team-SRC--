@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="motionmapper" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="./Debug/motionmapper" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D_CONSOLE" />
+					<Add option="-DPROTECTED_THINGS_DISABLE" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_WIN32" />
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add directory="../common" />
+					<Add directory="../../Public" />
+					<Add directory="../../Public/tier1" />
+					<Add directory="../nvtristriplib" />
+					<Add directory="../../Game_Shared" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../common" />
+					<Add directory="../../Public" />
+					<Add directory="../../Public/tier1" />
+					<Add directory="../nvtristriplib" />
+					<Add directory="../../Game_Shared" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="winmm" />
+					<Add directory="../../lib/common" />
+					<Add directory="../../lib/public" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="./Release/motionmapper" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D_CONSOLE" />
+					<Add option="-DPROTECTED_THINGS_DISABLE" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_WIN32" />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add directory="../common" />
+					<Add directory="../../Public" />
+					<Add directory="../../Public/tier1" />
+					<Add directory="../nvtristriplib" />
+					<Add directory="../../Game_Shared" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../common" />
+					<Add directory="../../Public" />
+					<Add directory="../../Public/tier1" />
+					<Add directory="../nvtristriplib" />
+					<Add directory="../../Game_Shared" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="winmm" />
+					<Add directory="../../lib/common" />
+					<Add directory="../../lib/public" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../lib/public/mathlib.lib" />
+		<Unit filename="../../lib/public/nvtristrip.lib" />
+		<Unit filename="../../lib/public/tier0.lib" />
+		<Unit filename="../../lib/public/tier1.lib" />
+		<Unit filename="../../lib/public/tier2.lib" />
+		<Unit filename="../../lib/public/vstdlib.lib" />
+		<Unit filename="../../public/Color.h" />
+		<Unit filename="../../public/FileSystem.h" />
+		<Unit filename="../../public/amd3dx.h" />
+		<Unit filename="../../public/appframework/IAppSystem.h" />
+		<Unit filename="../../public/commonmacros.h" />
+		<Unit filename="../../public/compressed_vector.h" />
+		<Unit filename="../../public/filesystem_helpers.cpp" />
+		<Unit filename="../../public/filesystem_helpers.h" />
+		<Unit filename="../../public/filesystem_init.cpp" />
+		<Unit filename="../../public/mathlib.h" />
+		<Unit filename="../../public/protected_things.h" />
+		<Unit filename="../../public/string_t.h" />
+		<Unit filename="../../public/studio.h" />
+		<Unit filename="../../public/tier0/basetypes.h" />
+		<Unit filename="../../public/tier0/dbg.h" />
+		<Unit filename="../../public/tier0/fasttimer.h" />
+		<Unit filename="../../public/tier0/mem.h" />
+		<Unit filename="../../public/tier0/memalloc.h" />
+		<Unit filename="../../public/tier0/memdbgoff.h" />
+		<Unit filename="../../public/tier0/memdbgon.h" />
+		<Unit filename="../../public/tier0/platform.h" />
+		<Unit filename="../../public/tier1/KeyValues.h" />
+		<Unit filename="../../public/tier1/characterset.h" />
+		<Unit filename="../../public/tier1/interface.h" />
+		<Unit filename="../../public/tier1/utlbuffer.h" />
+		<Unit filename="../../public/tier1/utldict.h" />
+		<Unit filename="../../public/tier1/utllinkedlist.h" />
+		<Unit filename="../../public/tier1/utlmemory.h" />
+		<Unit filename="../../public/tier1/utlrbtree.h" />
+		<Unit filename="../../public/tier1/utlsymbol.h" />
+		<Unit filename="../../public/tier1/utlvector.h" />
+		<Unit filename="../../public/vector.h" />
+		<Unit filename="../../public/vector2d.h" />
+		<Unit filename="../../public/vector4d.h" />
+		<Unit filename="../../public/vstdlib/ICommandLine.h" />
+		<Unit filename="../../public/vstdlib/IKeyValuesSystem.h" />
+		<Unit filename="../../public/vstdlib/strtools.h" />
+		<Unit filename="../../public/vstdlib/vstdlib.h" />
+		<Unit filename="../../tier1/KeyValues.cpp" />
+		<Unit filename="../../tier1/characterset.cpp" />
+		<Unit filename="../../tier1/interface.cpp" />
+		<Unit filename="../common/cmdlib.cpp" />
+		<Unit filename="../common/cmdlib.h" />
+		<Unit filename="../common/filesystem_tools.cpp" />
+		<Unit filename="../common/filesystem_tools.h" />
+		<Unit filename="../common/scriplib.cpp" />
+		<Unit filename="../common/scriplib.h" />
+		<Unit filename="motionmapper.cpp" />
+		<Unit filename="motionmapper.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

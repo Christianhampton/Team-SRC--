@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="hlmv" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release Win32">
+				<Option output="./Release/hlmv" prefix_auto="1" extension_auto="1" />
+				<Option object_output="release" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DPROTECTED_THINGS_DISABLE" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_WIN32" />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add directory="../mxtk/include" />
+					<Add directory="../common" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+					<Add directory="../../common" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../mxtk/include" />
+					<Add directory="../common" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+					<Add directory="../../common" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="comctl32" />
+					<Add library="winmm" />
+					<Add directory="../../lib/common" />
+					<Add directory="../../lib/public" />
+				</Linker>
+			</Target>
+			<Target title="Debug Win32">
+				<Option output="./Debug/hlmv" prefix_auto="1" extension_auto="1" />
+				<Option object_output="debug" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DVECTOR" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DPROTECTED_THINGS_DISABLE" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_WIN32" />
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add directory="../mxtk/include" />
+					<Add directory="../common" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+					<Add directory="../../common" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../mxtk/include" />
+					<Add directory="../common" />
+					<Add directory="../../public" />
+					<Add directory="../../public/tier1" />
+					<Add directory="../../common" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="comctl32" />
+					<Add library="winmm" />
+					<Add directory="../../lib/common" />
+					<Add directory="../../lib/public" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../lib-vc7/common/mxtk.lib" />
+		<Unit filename="../../lib-vc7/public/appframework.lib" />
+		<Unit filename="../../lib-vc7/public/bitmap.lib" />
+		<Unit filename="../../lib-vc7/public/mathlib.lib" />
+		<Unit filename="../../lib-vc7/public/tier0.lib" />
+		<Unit filename="../../lib-vc7/public/tier1.lib" />
+		<Unit filename="../../lib-vc7/public/vstdlib.lib" />
+		<Unit filename="../../public/CollisionUtils.cpp" />
+		<Unit filename="../../public/CollisionUtils.h" />
+		<Unit filename="../../public/FileSystem.h" />
+		<Unit filename="../../public/ISpatialPartition.h" />
+		<Unit filename="../../public/IStudioRender.h" />
+		<Unit filename="../../public/amd3dx.h" />
+		<Unit filename="../../public/appframework/IAppSystem.h" />
+		<Unit filename="../../public/basehandle.h" />
+		<Unit filename="../../public/bitvec.h" />
+		<Unit filename="../../public/bone_accessor.h" />
+		<Unit filename="../../public/bone_setup.cpp" />
+		<Unit filename="../../public/bone_setup.h" />
+		<Unit filename="../../public/bspflags.h" />
+		<Unit filename="../../public/cmodel.h" />
+		<Unit filename="../../public/commonmacros.h" />
+		<Unit filename="../../public/compressed_vector.h" />
+		<Unit filename="../../public/const.h" />
+		<Unit filename="../../public/filesystem_helpers.cpp" />
+		<Unit filename="../../public/filesystem_helpers.h" />
+		<Unit filename="../../public/filesystem_init.cpp" />
+		<Unit filename="../../public/gametrace.h" />
+		<Unit filename="../../public/ihandleentity.h" />
+		<Unit filename="../../public/materialsystem/imaterial.h" />
+		<Unit filename="../../public/materialsystem/imaterialproxyfactory.h" />
+		<Unit filename="../../public/materialsystem/imaterialsystem.h" />
+		<Unit filename="../../public/materialsystem/imaterialsystemhardwareconfig.h" />
+		<Unit filename="../../public/materialsystem/imaterialvar.h" />
+		<Unit filename="../../public/materialsystem/imesh.h" />
+		<Unit filename="../../public/materialsystem/itexture.h" />
+		<Unit filename="../../public/materialsystem/materialsystem_config.h" />
+		<Unit filename="../../public/mathlib.h" />
+		<Unit filename="../../public/mouthinfo.h" />
+		<Unit filename="../../public/phyfile.h" />
+		<Unit filename="../../public/protected_things.h" />
+		<Unit filename="../../public/s3_intrf.h" />
+		<Unit filename="../../public/string_t.h" />
+		<Unit filename="../../public/studio.cpp" />
+		<Unit filename="../../public/studio.h" />
+		<Unit filename="../../public/texture_group_names.h" />
+		<Unit filename="../../public/tier0/basetypes.h" />
+		<Unit filename="../../public/tier0/dbg.h" />
+		<Unit filename="../../public/tier0/fasttimer.h" />
+		<Unit filename="../../public/tier0/memdbgoff.h" />
+		<Unit filename="../../public/tier0/memdbgon.h" />
+		<Unit filename="../../public/tier0/memoverride.cpp" />
+		<Unit filename="../../public/tier0/platform.h" />
+		<Unit filename="../../public/tier0/vprof.h" />
+		<Unit filename="../../public/tier1/characterset.h" />
+		<Unit filename="../../public/tier1/fmtstr.h" />
+		<Unit filename="../../public/tier1/interface.h" />
+		<Unit filename="../../public/tier1/mempool.h" />
+		<Unit filename="../../public/tier1/utlbuffer.h" />
+		<Unit filename="../../public/tier1/utldict.h" />
+		<Unit filename="../../public/tier1/utllinkedlist.h" />
+		<Unit filename="../../public/tier1/utlmemory.h" />
+		<Unit filename="../../public/tier1/utlrbtree.h" />
+		<Unit filename="../../public/tier1/utlsymbol.h" />
+		<Unit filename="../../public/tier1/utlvector.h" />
+		<Unit filename="../../public/vcollide.h" />
+		<Unit filename="../../public/vcollide_parse.h" />
+		<Unit filename="../../public/vector.h" />
+		<Unit filename="../../public/vector2d.h" />
+		<Unit filename="../../public/vector4d.h" />
+		<Unit filename="../../public/vmatrix.h" />
+		<Unit filename="../../public/vphysics/constraints.h" />
+		<Unit filename="../../public/vphysics_interface.h" />
+		<Unit filename="../../public/vplane.h" />
+		<Unit filename="../../public/vstdlib/ICommandLine.h" />
+		<Unit filename="../../public/vstdlib/random.h" />
+		<Unit filename="../../public/vstdlib/strtools.h" />
+		<Unit filename="../../public/vstdlib/vstdlib.h" />
+		<Unit filename="../common/cmdlib.h" />
+		<Unit filename="../common/physdll.h" />
+		<Unit filename="../mxtk/include/mx/mx.h" />
+		<Unit filename="../mxtk/include/mx/mxCheckBox.h" />
+		<Unit filename="../mxtk/include/mx/mxChooseColor.h" />
+		<Unit filename="../mxtk/include/mx/mxFileDialog.h" />
+		<Unit filename="../mxtk/include/mx/mxGlWindow.h" />
+		<Unit filename="../mxtk/include/mx/mxGroupBox.h" />
+		<Unit filename="../mxtk/include/mx/mxLineEdit.h" />
+		<Unit filename="../mxtk/include/mx/mxLinkedList.h" />
+		<Unit filename="../mxtk/include/mx/mxListBox.h" />
+		<Unit filename="../mxtk/include/mx/mxMatSysWindow.h" />
+		<Unit filename="../mxtk/include/mx/mxMenuBar.h" />
+		<Unit filename="../mxtk/include/mx/mxMessageBox.h" />
+		<Unit filename="../mxtk/include/mx/mxPopupMenu.h" />
+		<Unit filename="../mxtk/include/mx/mxProgressBar.h" />
+		<Unit filename="../mxtk/include/mx/mxRadioButton.h" />
+		<Unit filename="../mxtk/include/mx/mxScrollbar.h" />
+		<Unit filename="../mxtk/include/mx/mxToggleButton.h" />
+		<Unit filename="../mxtk/include/mx/mxToolTip.h" />
+		<Unit filename="../mxtk/include/mx/mxTreeView.h" />
+		<Unit filename="../mxtk/include/mx/mxbmp.h" />
+		<Unit filename="../mxtk/include/mx/mxbutton.h" />
+		<Unit filename="../mxtk/include/mx/mxchoice.h" />
+		<Unit filename="../mxtk/include/mx/mxevent.h" />
+		<Unit filename="../mxtk/include/mx/mximage.h" />
+		<Unit filename="../mxtk/include/mx/mxinit.h" />
+		<Unit filename="../mxtk/include/mx/mxlabel.h" />
+		<Unit filename="../mxtk/include/mx/mxmenu.h" />
+		<Unit filename="../mxtk/include/mx/mxpath.h" />
+		<Unit filename="../mxtk/include/mx/mxpcx.h" />
+		<Unit filename="../mxtk/include/mx/mxslider.h" />
+		<Unit filename="../mxtk/include/mx/mxstring.h" />
+		<Unit filename="../mxtk/include/mx/mxtab.h" />
+		<Unit filename="../mxtk/include/mx/mxtga.h" />
+		<Unit filename="../mxtk/include/mx/mxwidget.h" />
+		<Unit filename="../mxtk/include/mx/mxwindow.h" />
+		<Unit filename="ControlPanel.cpp" />
+		<Unit filename="ControlPanel.h" />
+		<Unit filename="FileAssociation.cpp" />
+		<Unit filename="FileAssociation.h" />
+		<Unit filename="StudioModel.h" />
+		<Unit filename="ViewerSettings.cpp" />
+		<Unit filename="ViewerSettings.h" />
+		<Unit filename="attachments_window.cpp" />
+		<Unit filename="attachments_window.h" />
+		<Unit filename="debugdrawmodel.cpp" />
+		<Unit filename="debugdrawmodel.h" />
+		<Unit filename="hlmv.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="icon1.ico" />
+		<Unit filename="matsyswin.cpp" />
+		<Unit filename="matsyswin.h" />
+		<Unit filename="mdlviewer.cpp" />
+		<Unit filename="mdlviewer.h" />
+		<Unit filename="mxLineEdit2.cpp" />
+		<Unit filename="mxLineEdit2.h" />
+		<Unit filename="pakviewer.cpp" />
+		<Unit filename="pakviewer.h" />
+		<Unit filename="physmesh.cpp" />
+		<Unit filename="physmesh.h" />
+		<Unit filename="resource.h" />
+		<Unit filename="studio_flex.cpp" />
+		<Unit filename="studio_render.cpp" />
+		<Unit filename="studio_render.h" />
+		<Unit filename="studio_utils.cpp" />
+		<Unit filename="sys.h" />
+		<Unit filename="sys_win.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

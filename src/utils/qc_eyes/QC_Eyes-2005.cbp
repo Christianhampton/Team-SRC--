@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="QC_Eyes" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release Win32">
+				<Option output="./Release/QC_Eyes" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-W" />
+					<Add option="-O2" />
+				</Compiler>
+			</Target>
+			<Target title="Debug Win32">
+				<Option output="./Debug/QC_Eyes" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add option="-O0" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Unit filename="QC_Eyes.cpp" />
+		<Unit filename="QC_Eyes.h" />
+		<Unit filename="QC_Eyes.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="QC_EyesDlg.cpp" />
+		<Unit filename="QC_EyesDlg.h" />
+		<Unit filename="ReadMe.txt" />
+		<Unit filename="StdAfx.cpp" />
+		<Unit filename="StdAfx.h" />
+		<Unit filename="res/QC_Eyes.ico" />
+		<Unit filename="res/QC_Eyes.rc2" />
+		<Unit filename="res/bitmap1.bmp" />
+		<Unit filename="res/eye_XY_L.bmp" />
+		<Unit filename="res/eye_XY_R.bmp" />
+		<Unit filename="res/eye_Z_L.bmp" />
+		<Unit filename="res/eye_Z_R.bmp" />
+		<Unit filename="res/eye_default.bmp" />
+		<Unit filename="res/eye_lower_hi.bmp" />
+		<Unit filename="res/eye_lower_lo.bmp" />
+		<Unit filename="res/eye_lower_mid.bmp" />
+		<Unit filename="res/eye_upper_hi.bmp" />
+		<Unit filename="res/eye_upper_lo.bmp" />
+		<Unit filename="res/eye_upper_mid.bmp" />
+		<Unit filename="resource.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

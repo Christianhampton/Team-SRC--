@@ -1,0 +1,5 @@
+LightmappedGeneric
+{
+	$basetexture raws\sand_01
+	$surfaceprop sand
+}
