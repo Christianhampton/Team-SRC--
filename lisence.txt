@@ -18,3 +18,5 @@ includeing, but not limited to:
 7) This lisence may be changed with or without prior note.
 8) Anything created for this software or with it can be copyrighted by the copyright holder of the software at any moment.
 9) We reserve the right to revoke this lisence at any time, with or without prior or post note.
+THE ABOVE MUST BE INCLUDED IN ANY FUTURE VERSIONS OF YOUR SOFTWARE, UNMODIFYED!
+THIS SOFTWARE IS PROVIDED 'AS IS' WITH NO WARENTY!!!
