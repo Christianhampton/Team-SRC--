@@ -1,4 +1,4 @@
-License
+Team SRC++ Public Open (being constructed, do not use)
 ====================================
 
 Copyright (c) 2013 Team SRC++
