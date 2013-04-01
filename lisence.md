@@ -21,3 +21,5 @@ including, but not limited to:
 9) We reserve the right to revoke this license at any time, with or without prior or post note.
 THE ABOVE MUST BE INCLUDED IN ANY FUTURE VERSIONS OF YOUR SOFTWARE, UNMODIFIED!
 THIS SOFTWARE IS PROVIDED 'AS IS' WITH NO WARENTY!!!
+
+IMPORTANT NOTE: When this (the Team SRC++ Public License 1.0)  license is used, unless otherwise prevented (Ex. project is derived from a Creative Commons Attribution Share Alike) , all other copyright is void. (Such as All Rights Reserved is voided)
