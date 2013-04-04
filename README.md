@@ -11,3 +11,7 @@ For one,
 Branches
 ==========
 There are two, master and Experimental, the latter will be the most updated and the former (master) will contain every full version. the Experimental is like a preview system!
+
+Joining
+==========
+You can join this project by joining the Team, after that, the Master Source will be open for you to program to. This takes some trust, so you will have to show we can trust you.
